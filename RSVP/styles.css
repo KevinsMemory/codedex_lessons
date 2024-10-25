@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #0080ff;
+    border: 4px solid #fff;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 0 4px #000, 0 0 0 8px #fff;
+}
+
+h2 {
+    text-align: center;
+    color: #ffff00;
+    text-shadow: 2px 2px #ff00ff;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: none;
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border: 2px solid #fff;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked::after, input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: #0f0;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked::after {
+    border-radius: 50%;
+}
+
+input[type="submit"] {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff6600;
+}
+
+/* Pixel art decorations */
+form::before, form::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff00ff;
+    box-shadow: 20px 0 0 #ff00ff, 40px 0 0 #ff00ff,
+                0 20px 0 #ff00ff, 20px 20px 0 #ff00ff, 40px 20px 0 #ff00ff,
+                0 40px 0 #ff00ff, 20px 40px 0 #ff00ff, 40px 40px 0 #ff00ff;
+}
+
+form::before {
+    top: -60px;
+    left: -60px;
+}
+
+form::after {
+    bottom: -60px;
+    right: -60px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label {
+    margin-left: 10px;
+    cursor: pointer;
+}

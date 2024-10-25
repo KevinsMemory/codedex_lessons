@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        input, select, textarea {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>RSVP</h2>
+        <p>Come and make our special day more awesome!</p>
+        <br>
+        First Name: <input type="text" />
+        <br><br>
+        Last Name: <input type="text" />
+        <br><br>
+        Are you coming?<br>
+        <input type="radio" name="invite" /> Yes
+        <input type="radio" name="invite" /> No
+        <input type="radio" name="invite" /> Maybe
+        <br><br>
+        Any dietary restrictions for the main course?<br>
+        <div class="checkbox-group">
+            <div><input type="checkbox" id="vegetarian" /> <label for="vegetarian">Vegetarian</label></div>
+            <div><input type="checkbox" id="vegan" /> <label for="vegan">Vegan</label></div>
+            <div><input type="checkbox" id="gluten-free" /> <label for="gluten-free">Gluten-free</label></div>
+            <div><input type="checkbox" id="nut-free" /> <label for="nut-free">Nut-free</label></div>
+            <div><input type="checkbox" id="lactose-free" /> <label for="lactose-free">Lactose-free</label></div>
+            <div><input type="checkbox" id="none" /> <label for="none">None</label></div>
+        </div>
+        <br><br>
+        <input type="submit" />
+    </form>
+</body>
+</html>
