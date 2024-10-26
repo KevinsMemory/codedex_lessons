@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Retro Sign Up</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
-        <h2>Sign Up</h2>
-        Username: <input type="text" />
-        <br><br>
-        Email: <input type="email" />
-        <br><br>
-        Password: <input type="password" />
-        <br><br>
-        Confirm Password: <input type="password" />
-        <br><br>
-        <input type="submit" />
-      </form>
+    <div class="pixel-container">
+        <form class="pixel-form">
+            <h2 class="pixel-text">Sign Up</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="pixel-input" />
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="pixel-input" />
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="pixel-input" />
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" class="pixel-input" />
+            
+            <button type="submit" class="pixel-button">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

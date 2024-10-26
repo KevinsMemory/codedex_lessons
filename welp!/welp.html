@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welp!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="pixel-border">
+    <h1>Welp! Game Review</h1>
+    <label for="name">Name: </label><input type="text" id="name" required/>
+    <br><br>
+    <label for="game">Game: </label><input type="text" id="game" required/>
+
+    <p>Would you play this game again?</p>
+    <input type="radio" name="yes_no_maybe" id="yes"/> <label for="yes">Yes</label>
+    <input type="radio" name="yes_no_maybe" id="no"/> <label for="no">No</label>
+    <input type="radio" name="yes_no_maybe" id="maybe"/> <label for="maybe">Maybe</label>
+   
+    <p>How many stars, out of 5, would you rate this game?</p>
+    <div class="rating-group">
+      <div class="rating-option">
+        <input type="radio" name="rating" id="star1"/> <label for="star1">1</label>
+      </div>
+      <div class="rating-option">
+        <input type="radio" name="rating" id="star2"/> <label for="star2">2</label>
+      </div>
+      <div class="rating-option">
+        <input type="radio" name="rating" id="star3"/> <label for="star3">3</label>
+      </div>
+      <div class="rating-option">
+        <input type="radio" name="rating" id="star4"/> <label for="star4">4</label>
+      </div>
+      <div class="rating-option">
+        <input type="radio" name="rating" id="star5"/> <label for="star5">5</label>
+      </div>
+    </div>
+
+    <p>Review</p>
+    <textarea maxlength="250"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit Review" />
+  </form>
+</body>
+</html>
