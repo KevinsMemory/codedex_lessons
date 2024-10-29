@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pixel-container {
+  background-color: #0f0f0f;
+  border: 4px solid #fff;
+  padding: 20px;
+  image-rendering: pixelated;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.pixel-text {
+  font-size: 24px;
+  text-shadow: 2px 2px #ff00ff, -2px -2px #ff00ff, 2px -2px #ff00ff, -2px 2px #ff00ff;
+  margin-bottom: 20px;
+}
+
+.pixel-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pixel-input {
+  background-color: #000;
+  color: #0f0;
+  border: 2px solid #0f0;
+  padding: 8px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+}
+
+.pixel-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0f0;
+}
+
+.pixel-button {
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pixel-button:hover {
+  background-color: #00ff00;
+  transform: scale(1.05);
+}
+
+.pixel-button:active {
+  transform: scale(0.95);
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* Additional styles for the existing elements */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+nav ul li:hover {
+  color: #0f0;
+}
+

@@ -1,0 +1,52 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav li:hover {
+    color: #FF7F3F;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#price {
+    font-weight: bold;
+    font-style: italic;
+}
+
+label, input, button, textarea {
+    margin-top: 1rem;
+}
+
+#request {
+    margin-top: 1rem;
+}
+
+#side-fries > input {
+    margin-top: -1rem;
+}
+
+footer span {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    color: #FF7F3F;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 1px;
+    padding: 0 4px;
+}
